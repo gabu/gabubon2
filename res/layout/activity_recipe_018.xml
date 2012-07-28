@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/center" />
+
+        <Button
+            android:id="@+id/center_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/center_crop" />
+
+        <Button
+            android:id="@+id/center_inside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/center_inside" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/fit_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/fit_center" />
+
+        <Button
+            android:id="@+id/fit_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/fit_end" />
+
+        <Button
+            android:id="@+id/fit_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/fit_start" />
+
+        <Button
+            android:id="@+id/fit_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="changeScaleType"
+            android:text="@string/fit_xy" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchImageView"
+        android:text="@string/switch_view" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="switchImage"
+        android:text="@string/switch_image" />
+
+    </LinearLayout>
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/landscape_image_view"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/gabu" />
+
+        <ImageView
+            android:id="@+id/portlate_image_view"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/gabu" />
+    </ViewSwitcher>
+
+</LinearLayout>
