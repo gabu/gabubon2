@@ -14,9 +14,15 @@
     <string name="fit_end">fit_end</string>
     <string name="fit_start">fit_start</string>
     <string name="fit_xy">fit_xy</string>
+    <string name="ellipsize_none">none</string>
+    <string name="ellipsize_start">start</string>
+    <string name="ellipsize_middle">middle</string>
+    <string name="ellipsize_end">end</string>
+    <string name="long_text">Android（アンドロイド）とは、スマートフォンやタブレットPCなどの携帯情報端末を主なターゲットとして開発されたプラットフォームである。Linuxベースのモバイル用オープンソース・オペレーティングシステム、ミドルウェア、主要なアプリケーションからなるソフトウェアスタック（集合）パッケージで構成されている。</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
     <string name="recipe_018_title">018 イメージビューを使う</string>
+    <string name="recipe_019_title">019 テキストビューを使う</string>
 
 </resources>
