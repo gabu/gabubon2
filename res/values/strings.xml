@@ -44,6 +44,7 @@
     <string name="recipe_023_title">023 スピナー（セレクトボックス）を使う</string>
     <string name="recipe_024_title">024 トグルボタンを使う</string>
     <string name="recipe_025_title">025 レイティングバーを使う</string>
+    <string name="recipe_026_title">026 シークバーを使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
