@@ -19,10 +19,17 @@
     <string name="ellipsize_middle">middle</string>
     <string name="ellipsize_end">end</string>
     <string name="long_text">Android（アンドロイド）とは、スマートフォンやタブレットPCなどの携帯情報端末を主なターゲットとして開発されたプラットフォームである。Linuxベースのモバイル用オープンソース・オペレーティングシステム、ミドルウェア、主要なアプリケーションからなるソフトウェアスタック（集合）パッケージで構成されている。</string>
+    <string name="hint_text">1行テキスト</string>
+    <string name="hint_password">パスワード</string>
+    <string name="hint_number">数字のみ</string>
+    <string name="hint_phone">電話番号</string>
+    <string name="hint_multiline">複数行</string>
+    <string name="hint_email">メールアドレス</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
     <string name="recipe_018_title">018 イメージビューを使う</string>
     <string name="recipe_019_title">019 テキストビューを使う</string>
+    <string name="recipe_020_title">020 エディットテキストを使う</string>
 
 </resources>
