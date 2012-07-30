@@ -28,6 +28,9 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="clear">Clear</string>
+    <string name="check_box_a">CheckBox A</string>
+    <string name="check_box_b">CheckBox B</string>
+    <string name="check_box_c">CheckBox C</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -35,5 +38,6 @@
     <string name="recipe_019_title">019 テキストビューを使う</string>
     <string name="recipe_020_title">020 エディットテキストを使う</string>
     <string name="recipe_021_title">021 ラジオボタンを使う</string>
+    <string name="recipe_022_title">022 チェックボックスを使う</string>
 
 </resources>

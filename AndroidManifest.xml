@@ -36,6 +36,9 @@
         <activity
             android:name=".recipe021.Recipe021Activity"
             android:label="@string/recipe_021_title" />
+        <activity
+            android:name=".recipe022.Recipe022Activity"
+            android:label="@string/recipe_022_title" />
     </application>
 
 </manifest>
