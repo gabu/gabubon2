@@ -46,6 +46,7 @@
     <string name="recipe_025_title">025 レイティングバーを使う</string>
     <string name="recipe_026_title">026 シークバーを使う</string>
     <string name="recipe_027_title">027 アナログ時計を使う</string>
+    <string name="recipe_028_title">028 デジタル時計を使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
