@@ -25,11 +25,15 @@
     <string name="hint_phone">電話番号</string>
     <string name="hint_multiline">複数行</string>
     <string name="hint_email">メールアドレス</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="clear">Clear</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
     <string name="recipe_018_title">018 イメージビューを使う</string>
     <string name="recipe_019_title">019 テキストビューを使う</string>
     <string name="recipe_020_title">020 エディットテキストを使う</string>
+    <string name="recipe_021_title">021 ラジオボタンを使う</string>
 
 </resources>
