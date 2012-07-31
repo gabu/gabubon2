@@ -7,6 +7,8 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="15" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -63,6 +65,9 @@
         <activity
             android:name=".recipe030.Recipe030Activity"
             android:label="@string/recipe_030_title" />
+        <activity
+            android:name=".recipe031.Recipe031Activity"
+            android:label="@string/recipe_031_title" />
     </application>
 
 </manifest>

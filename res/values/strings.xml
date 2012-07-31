@@ -57,6 +57,7 @@
     <string name="recipe_028_title">028 デジタル時計を使う</string>
     <string name="recipe_029_title">029 日付選択ダイアログボックスを使う</string>
     <string name="recipe_030_title">030 時間選択ダイアログボックスを使う</string>
+    <string name="recipe_031_title">031 ウェブビューで指定したURLを表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
