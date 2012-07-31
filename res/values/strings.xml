@@ -33,6 +33,11 @@
     <string name="check_box_c">CheckBox C</string>
     <string name="off_text">効果音オフ</string>
     <string name="on_text">効果音オン</string>
+    <string name="to_default">To default</string>
+    <string name="calendar_shown">calendarViewShown</string>
+    <string name="spinner_shown">spinnersShown</string>
+    <string name="date_picker_dialog">DatePickerDialog</string>
+    <string name="date_picker_fragment">DatePickerFragment</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -47,6 +52,7 @@
     <string name="recipe_026_title">026 シークバーを使う</string>
     <string name="recipe_027_title">027 アナログ時計を使う</string>
     <string name="recipe_028_title">028 デジタル時計を使う</string>
+    <string name="recipe_029_title">029 日付選択ダイアログボックスを使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

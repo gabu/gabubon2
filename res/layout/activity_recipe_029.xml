@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDefaultClick"
+            android:text="@string/to_default" />
+
+        <CheckBox
+            android:id="@+id/calendar_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onCalendarClick"
+            android:text="@string/calendar_shown" />
+
+        <CheckBox
+            android:id="@+id/spinner_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onSpinnerClick"
+            android:text="@string/spinner_shown" />
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDatePickerDialogClick"
+            android:text="@string/date_picker_dialog" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onDatePickerFragmentClick"
+            android:text="@string/date_picker_fragment" />
+    </LinearLayout>
+
+</ScrollView>
