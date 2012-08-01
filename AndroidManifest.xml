@@ -71,6 +71,9 @@
         <activity
             android:name=".recipe032.Recipe032Activity"
             android:label="@string/recipe_032_title" />
+        <activity
+            android:name=".recipe033.Recipe033Activity"
+            android:label="@string/recipe_033_title" />
     </application>
 
 </manifest>
