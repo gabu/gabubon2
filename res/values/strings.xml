@@ -52,6 +52,9 @@
     <string name="center_bottom">下</string>
     <string name="right_bottom">右下</string>
     <string name="custom">カスタムビュー</string>
+    <string name="notification">通知！</string>
+    <string name="custom_sound">カスタムサウンド通知！</string>
+    <string name="custom_led">カスタムLED通知！</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -72,6 +75,7 @@
     <string name="recipe_032_title">032 ウェブビューで用意したHTMLを表示する</string>
     <string name="recipe_033_title">033 入力補完エディットテキストを使う</string>
     <string name="recipe_034_title">034 トーストを表示する</string>
+    <string name="recipe_035_title">035 ノーティフィケーションを表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
