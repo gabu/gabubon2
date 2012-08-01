@@ -42,6 +42,16 @@
     <string name="time_picker_fragment">TimePickerFragment</string>
     <string name="is_24_hour">is24HourView</string>
     <string name="london_olympics_contries">London Olympics Participating Countries</string>
+    <string name="left_top">左上</string>
+    <string name="center_top">上</string>
+    <string name="right_top">右上</string>
+    <string name="left_center">左中</string>
+    <string name="gravity_center">中央</string>
+    <string name="right_center">右中</string>
+    <string name="left_bottom">左下</string>
+    <string name="center_bottom">下</string>
+    <string name="right_bottom">右下</string>
+    <string name="custom">カスタムビュー</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -61,6 +71,7 @@
     <string name="recipe_031_title">031 ウェブビューで指定したURLを表示する</string>
     <string name="recipe_032_title">032 ウェブビューで用意したHTMLを表示する</string>
     <string name="recipe_033_title">033 入力補完エディットテキストを使う</string>
+    <string name="recipe_034_title">034 トーストを表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
