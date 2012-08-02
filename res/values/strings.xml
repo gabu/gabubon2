@@ -63,6 +63,9 @@
     <string name="with_title">タイトル付き</string>
     <string name="two_buttons">2つボタン</string>
     <string name="three_buttons">3つボタン</string>
+    <string name="select">選択ダイアログ</string>
+    <string name="single_choice">ラジオボタン選択ダイアログ</string>
+    <string name="multi_choice">チェックボックス選択ダイアログ</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -87,6 +90,7 @@
     <string name="recipe_036_title">036 メニューを表示する</string>
     <string name="recipe_037_title">037 プログレスダイアログを表示する</string>
     <string name="recipe_038_title">038 確認ダイアログを表示する</string>
+    <string name="recipe_039_title">039 選択ダイアログを表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
