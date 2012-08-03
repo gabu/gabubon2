@@ -91,6 +91,8 @@
     <string name="recipe_037_title">037 プログレスダイアログを表示する</string>
     <string name="recipe_038_title">038 確認ダイアログを表示する</string>
     <string name="recipe_039_title">039 選択ダイアログを表示する</string>
+    <string name="recipe_040_title">040 画像の一覧をグリッドビューで表示する</string>
+    <string name="recipe_041_title">041 カスタムビューをグリッドビューで表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
