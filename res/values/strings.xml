@@ -113,6 +113,7 @@
     <string name="recipe_049_title">049 ビューをアニメーションする</string>
     <string name="recipe_050_title">050 ListViewを表示する</string>
     <string name="recipe_051_title">051 表示内容をカスタマイズする</string>
+    <string name="recipe_052_title">052 タップ、ロングタップを検知する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
