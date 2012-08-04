@@ -14,13 +14,16 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name=".MainActivity" >
+        <activity
+            android:name=".recipe048.SplashActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".recipe016.Recipe016Activity"
             android:label="@string/recipe_016_title" />
@@ -119,6 +122,9 @@
         <activity
             android:name=".recipe047.Recipe047Activity"
             android:label="@string/recipe_047_title" />
+        <activity
+            android:name=".recipe048.Recipe048Activity"
+            android:label="@string/recipe_048_title" />
     </application>
 
 </manifest>
