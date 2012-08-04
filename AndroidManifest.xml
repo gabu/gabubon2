@@ -110,6 +110,9 @@
             android:name=".recipe044.Recipe044Activity"
             android:label="@string/recipe_044_title"
             android:screenOrientation="landscape" />
+        <activity
+            android:name=".recipe045.Recipe045Activity"
+            android:label="@string/recipe_045_title" />
     </application>
 
 </manifest>
