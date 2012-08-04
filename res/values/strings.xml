@@ -70,6 +70,12 @@
     <string name="single_choice">ラジオボタン選択ダイアログ</string>
     <string name="multi_choice">チェックボックス選択ダイアログ</string>
     <string name="only_landscape">横画面固定中（理想は縦横両対応なのでこのレシピはよく検討してお使いください！）</string>
+    <string name="alpha">Alpha</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="mix">Mix</string>
+    <string name="translate">Translate</string>
+    <string name="interpolator">Interpolator for Translate</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -104,6 +110,7 @@
     <string name="recipe_046_title">046 ステータスバーを非表示にする</string>
     <string name="recipe_047_title">047 タイトルバーを非表示にする</string>
     <string name="recipe_048_title">048 アプリ起動時にスプラッシュ画像を表示する</string>
+    <string name="recipe_049_title">049 ビューをアニメーションする</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
