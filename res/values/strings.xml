@@ -101,6 +101,7 @@
     <string name="recipe_043_title">043 スワイプで切り替わるタブと処理を作成する</string>
     <string name="recipe_044_title">044 画面の回転をロックする</string>
     <string name="recipe_045_title">045 横画面用のレイアウトを用意する</string>
+    <string name="recipe_046_title">046 ステータスバーを非表示にする</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
