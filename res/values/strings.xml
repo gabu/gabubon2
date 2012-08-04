@@ -76,6 +76,7 @@
     <string name="mix">Mix</string>
     <string name="translate">Translate</string>
     <string name="interpolator">Interpolator for Translate</string>
+    <string name="footer_text">次の5件を読み込む</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -115,6 +116,7 @@
     <string name="recipe_051_title">051 表示内容をカスタマイズする</string>
     <string name="recipe_052_title">052 タップ、ロングタップを検知する</string>
     <string name="recipe_053_title">053 最後までスクロールしたことを検知する</string>
+    <string name="recipe_054_title">054 次のX件を読み込む</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
