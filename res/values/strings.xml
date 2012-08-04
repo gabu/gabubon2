@@ -2,6 +2,9 @@
 
     <string name="app_name">AndroidRecipe</string>
     <string name="hello_world">Hello world!</string>
+    <string name="hello_first_fragment">Hello First Fragment!</string>
+    <string name="hello_second_fragment">Hello Second Fragment!</string>
+    <string name="hello_third_fragment">Hello Third Fragment!</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_camera">Camera</string>
     <string name="menu_delete">Delete</string>
@@ -94,6 +97,7 @@
     <string name="recipe_040_title">040 画像の一覧をグリッドビューで表示する</string>
     <string name="recipe_041_title">041 カスタムビューをグリッドビューで表示する</string>
     <string name="recipe_042_title">042 スワイプで切り替わるビューを作成する</string>
+    <string name="recipe_043_title">043 スワイプで切り替わるタブと処理を作成する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
