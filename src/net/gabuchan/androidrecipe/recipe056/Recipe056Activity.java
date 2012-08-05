@@ -1,7 +1,6 @@
 
 package net.gabuchan.androidrecipe.recipe056;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,8 +65,7 @@ public class Recipe056Activity extends ListActivity {
         });
     }
 
-    @SuppressWarnings("serial")
-    class ListItem implements Serializable {
+    class ListItem {
 
         int resId; // アイコン画像リソースID
         String name; // ユーザ名
