@@ -118,6 +118,7 @@
     <string name="recipe_053_title">053 最後までスクロールしたことを検知する</string>
     <string name="recipe_054_title">054 次のX件を読み込む</string>
     <string name="recipe_056_title">056 画面が回転してもデータを保持する</string>
+    <string name="recipe_057_title">057 アプリが終了してもデータを保持する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
