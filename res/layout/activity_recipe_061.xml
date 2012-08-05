@@ -12,7 +12,6 @@
     <ImageView
         android:id="@+id/image_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/gabu" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
