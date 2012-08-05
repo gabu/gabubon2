@@ -9,6 +9,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -167,6 +168,9 @@
         <activity
             android:name=".recipe063.Recipe063Activity"
             android:label="@string/recipe_063_title" />
+        <activity
+            android:name=".recipe064.Recipe064Activity"
+            android:label="@string/recipe_064_title" />
     </application>
 
 </manifest>
