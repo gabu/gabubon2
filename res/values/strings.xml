@@ -134,6 +134,7 @@
     <string name="recipe_064_title">064 画像をSDカードに保存する</string>
     <string name="recipe_065_title">065 ギャラリーから画像を選択する</string>
     <string name="recipe_066_title">066 サムネイルを取得する</string>
+    <string name="recipe_067_title">067 JPEGファイルからExif情報を取得する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
