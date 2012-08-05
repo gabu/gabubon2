@@ -124,6 +124,7 @@
     <string name="recipe_058_title">058 端末の解像度に合わせて画像を表示する</string>
     <string name="recipe_059_title">059 拡大されても綺麗な画像（9-patch）を使う</string>
     <string name="recipe_060_title">060 画像をリサイズする</string>
+    <string name="recipe_061_title">061 画像を切り取る</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
