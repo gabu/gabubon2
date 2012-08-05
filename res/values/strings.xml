@@ -77,6 +77,8 @@
     <string name="translate">Translate</string>
     <string name="interpolator">Interpolator for Translate</string>
     <string name="footer_text">次の5件を読み込む</string>
+    <string name="no_nine_patch">ただの画像の場合</string>
+    <string name="nine_patch">9-patchの場合</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -120,6 +122,7 @@
     <string name="recipe_056_title">056 画面が回転してもデータを保持する</string>
     <string name="recipe_057_title">057 アプリが終了してもデータを保持する</string>
     <string name="recipe_058_title">058 端末の解像度に合わせて画像を表示する</string>
+    <string name="recipe_059_title">059 拡大されても綺麗な画像（9-patch）を使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
