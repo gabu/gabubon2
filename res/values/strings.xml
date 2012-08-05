@@ -81,6 +81,7 @@
     <string name="nine_patch">9-patchの場合</string>
     <string name="composite">合成！</string>
     <string name="composite_and_save">合成してSDカードに保存！</string>
+    <string name="pick_image">画像をギャラリーから選択！</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -130,6 +131,7 @@
     <string name="recipe_062_title">062 画像を回転する</string>
     <string name="recipe_063_title">063 画像を合成する</string>
     <string name="recipe_064_title">064 画像をSDカードに保存する</string>
+    <string name="recipe_065_title">065 ギャラリーから画像を選択する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
