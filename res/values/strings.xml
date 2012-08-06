@@ -87,6 +87,10 @@
     <string name="sound_normal">うんたん</string>
     <string name="sound_high">ｳﾝﾀﾝ</string>
     <string name="playing">BGM再生中・・・♪</string>
+    <string name="recording_start">録音スタート</string>
+    <string name="recording_stop">録音ストップ</string>
+    <string name="play">再生！</string>
+    <string name="now_playing">再生中</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -141,6 +145,7 @@
     <string name="recipe_067_title">067 JPEGファイルからExif情報を取得する</string>
     <string name="recipe_068_title">068 効果音を再生する</string>
     <string name="recipe_069_title">069 音声ファイルを再生する</string>
+    <string name="recipe_070_title">070 マイクから録音する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

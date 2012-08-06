@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:onClick="onRecordingClick"
+        android:text="@string/recording_start" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_marginTop="45dp"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:onClick="onPlayClick"
+        android:text="@string/play" />
+    
+</LinearLayout>
