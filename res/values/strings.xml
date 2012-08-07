@@ -158,6 +158,7 @@
     <string name="recipe_074_title">074 イコライザで音を変化させる</string>
     <string name="recipe_075_title">075 カメラアプリで写真を撮影する</string>
     <string name="recipe_076_title">076 カメラのプレビュー映像を表示する</string>
+    <string name="recipe_077_title">077 カメラのプレビュー映像にビューを重ねる</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
