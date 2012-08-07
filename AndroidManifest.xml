@@ -12,6 +12,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- For Visualizer -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -198,6 +200,9 @@
         <activity
             android:name=".recipe072.Recipe072Activity"
             android:label="@string/recipe_072_title" />
+        <activity
+            android:name=".recipe073.Recipe073Activity"
+            android:label="@string/recipe_073_title" />
     </application>
 
 </manifest>
