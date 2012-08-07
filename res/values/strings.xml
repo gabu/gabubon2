@@ -153,6 +153,7 @@
     <string name="recipe_071_title">071 動画を撮影する</string>
     <string name="recipe_072_title">072 動画を再生する</string>
     <string name="recipe_073_title">073 ビジュアライザで波形を表示する</string>
+    <string name="recipe_074_title">074 イコライザで音を変化させる</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
