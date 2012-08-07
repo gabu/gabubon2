@@ -210,6 +210,11 @@
             android:name=".recipe075.Recipe075Activity"
             android:configChanges="orientation|screenSize"
             android:label="@string/recipe_075_title" />
+        <activity
+            android:name=".recipe076.Recipe076Activity"
+            android:label="@string/recipe_076_title"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
     </application>
 
 </manifest>

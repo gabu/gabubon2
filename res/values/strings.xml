@@ -96,6 +96,7 @@
     <string name="pick_video">動画をギャラリーから選択！</string>
     <string name="pick_music">音楽を選択</string>
     <string name="start_camera">カメラを起動</string>
+    <string name="capture">撮影</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -156,6 +157,7 @@
     <string name="recipe_073_title">073 ビジュアライザで波形を表示する</string>
     <string name="recipe_074_title">074 イコライザで音を変化させる</string>
     <string name="recipe_075_title">075 カメラアプリで写真を撮影する</string>
+    <string name="recipe_076_title">076 カメラのプレビュー映像を表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
