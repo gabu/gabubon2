@@ -101,6 +101,7 @@
     <string name="auto_focus">AF</string>
     <string name="flash_mode">フラッシュモード</string>
     <string name="focus_mode">フォーカスモード</string>
+    <string name="lets_shake">端末をシャカシャカ振ってシェイクしてください。</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -174,6 +175,7 @@
     <string name="recipe_086_title">086 端末の傾きを取得する</string>
     <string name="recipe_087_title">087 方位を取得する</string>
     <string name="recipe_088_title">088 位置情報を取得する</string>
+    <string name="recipe_089_title">089 シェイクを検知する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
