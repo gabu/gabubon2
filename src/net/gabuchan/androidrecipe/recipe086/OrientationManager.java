@@ -104,29 +104,32 @@ public class OrientationManager implements SensorEventListener {
         }
     }
 
-    private void getOrientation(float[] R, float[] values) {
-        if (mDisplayRotation == Surface.ROTATION_0) {
-            // 回転していなければそのまま傾きを取得
-            SensorManager.getOrientation(R, values);
-        } else {
-            float[] newR = new float[16];
-            if (mDisplayRotation == Surface.ROTATION_90) {
-                // 回転していれば軸を指定して行列変換して新しい回転行列を作る
-                SensorManager.remapCoordinateSystem(R,
-                        SensorManager.AXIS_Y, SensorManager.AXIS_MINUS_X, newR);
-            } else if (mDisplayRotation == Surface.ROTATION_180) {
-                float[] tmp = new float[16];
-                SensorManager.remapCoordinateSystem(R,
-                        SensorManager.AXIS_Y, SensorManager.AXIS_MINUS_X, tmp);
-                SensorManager.remapCoordinateSystem(tmp,
-                        SensorManager.AXIS_Y, SensorManager.AXIS_MINUS_X, newR);
-            } else if (mDisplayRotation == Surface.ROTATION_270) {
-                SensorManager.remapCoordinateSystem(R,
-                        SensorManager.AXIS_MINUS_Y, SensorManager.AXIS_MINUS_X, newR);
-            }
-            // 変換後の回転行列で傾きを取得
-            SensorManager.getOrientation(newR, values);
+    private void getOrientation(float[] inR, float[] values) {
+        int x_axis = SensorManager.AXIS_X;
+        int y_axis = SensorManager.AXIS_Y;
+
+        // 画面の回転によって軸を変える
+        switch (mDisplayRotation) {
+            case Surface.ROTATION_0:
+                break;
+            case Surface.ROTATION_90:
+                x_axis = SensorManager.AXIS_Y;
+                y_axis = SensorManager.AXIS_MINUS_X;
+                break;
+            case Surface.ROTATION_180:
+                y_axis = SensorManager.AXIS_MINUS_Y;
+                break;
+            case Surface.ROTATION_270:
+                x_axis = SensorManager.AXIS_MINUS_Y;
+                y_axis = SensorManager.AXIS_X;
+                break;
         }
+
+        float[] outR = new float[16];
+        // 回転行列を変換
+        SensorManager.remapCoordinateSystem(inR, x_axis, y_axis, outR);
+        // 傾きを取得
+        SensorManager.getOrientation(outR, values);
     }
 
     /**
