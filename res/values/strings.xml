@@ -99,6 +99,7 @@
     <string name="capture">撮影</string>
     <string name="picture_size">撮影サイズ</string>
     <string name="auto_focus">AF</string>
+    <string name="flash_mode">フラッシュモード</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -163,6 +164,7 @@
     <string name="recipe_077_title">077 カメラのプレビュー映像にビューを重ねる</string>
     <string name="recipe_078_title">078 写真を撮影する</string>
     <string name="recipe_079_title">079 オートフォーカスを使う</string>
+    <string name="recipe_080_title">080 フラッシュを使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

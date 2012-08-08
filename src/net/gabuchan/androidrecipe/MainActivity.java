@@ -67,6 +67,7 @@ import net.gabuchan.androidrecipe.recipe076.Recipe076Activity;
 import net.gabuchan.androidrecipe.recipe077.Recipe077Activity;
 import net.gabuchan.androidrecipe.recipe078.Recipe078Activity;
 import net.gabuchan.androidrecipe.recipe079.Recipe079Activity;
+import net.gabuchan.androidrecipe.recipe080.Recipe080Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -144,6 +145,7 @@ public class MainActivity extends ListActivity {
         mRecipes.add(new Recipe(R.string.recipe_077_title, Recipe077Activity.class));
         mRecipes.add(new Recipe(R.string.recipe_078_title, Recipe078Activity.class));
         mRecipes.add(new Recipe(R.string.recipe_079_title, Recipe079Activity.class));
+        mRecipes.add(new Recipe(R.string.recipe_080_title, Recipe080Activity.class));
 
         List<String> titles = new ArrayList<String>();
         for (Recipe recipe : mRecipes) {
