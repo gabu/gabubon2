@@ -170,6 +170,7 @@
     <string name="recipe_082_title">082 フロントカメラを使う</string>
     <string name="recipe_083_title">083 加速度センサーを使う</string>
     <string name="recipe_084_title">084 近接センサーを使う</string>
+    <string name="recipe_085_title">085 明るさセンサーを使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
