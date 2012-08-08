@@ -168,6 +168,7 @@
     <string name="recipe_080_title">080 フラッシュを使う</string>
     <string name="recipe_081_title">081 フォーカスモードを使う</string>
     <string name="recipe_082_title">082 フロントカメラを使う</string>
+    <string name="recipe_083_title">083 加速度センサーを使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

@@ -245,6 +245,9 @@
             android:label="@string/recipe_082_title"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".recipe083.Recipe083Activity"
+            android:label="@string/recipe_083_title" />
     </application>
 
 </manifest>
