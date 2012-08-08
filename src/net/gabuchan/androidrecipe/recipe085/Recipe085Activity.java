@@ -31,7 +31,7 @@ public class Recipe085Activity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipe_083);
+        setContentView(R.layout.activity_recipe_085);
 
         // SensorManagerを取得
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);

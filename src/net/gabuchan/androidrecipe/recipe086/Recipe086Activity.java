@@ -15,7 +15,7 @@ public class Recipe086Activity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipe_083);
+        setContentView(R.layout.activity_recipe_086);
 
         // TextViewを取得
         mTextView = (TextView) findViewById(R.id.text_view);
