@@ -172,6 +172,7 @@
     <string name="recipe_084_title">084 近接センサーを使う</string>
     <string name="recipe_085_title">085 明るさセンサーを使う</string>
     <string name="recipe_086_title">086 端末の傾きを取得する</string>
+    <string name="recipe_087_title">087 方位を取得する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
