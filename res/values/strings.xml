@@ -100,8 +100,17 @@
     <string name="picture_size">撮影サイズ</string>
     <string name="auto_focus">AF</string>
     <string name="flash_mode">フラッシュモード</string>
-    <string name="focus_mode">フォーカスモード</string>
     <string name="lets_shake">端末をシャカシャカ振ってシェイクしてください。</string>
+    <string name="focus_mode">フォーカスモード</string>
+    <string name="browser">ブラウザ</string>
+    <string name="search">検索</string>
+    <string name="tel">電話</string>
+    <string name="map">Googleマップ</string>
+    <string name="share">共有</string>
+    <string name="image_share">画像を共有</string>
+    <string name="recognize">音声認識</string>
+    <string name="mail">メール</string>
+    <string name="mail_attache">メール添付</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -176,6 +185,7 @@
     <string name="recipe_087_title">087 方位を取得する</string>
     <string name="recipe_088_title">088 位置情報を取得する</string>
     <string name="recipe_089_title">089 シェイクを検知する</string>
+    <string name="recipe_090_title">090..095 インテント</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
