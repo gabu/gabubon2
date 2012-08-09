@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <!-- For Visualizer -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -306,6 +307,9 @@
         <activity
             android:name=".recipe112.Recipe112Activity"
             android:label="@string/recipe_112_title" />
+        <activity
+            android:name=".recipe113.Recipe113Activity"
+            android:label="@string/recipe_113_title" />
     </application>
 
 </manifest>
