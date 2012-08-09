@@ -10,6 +10,7 @@
     <string name="menu_delete">Delete</string>
     <string name="background_color">Background color</string>
     <string name="save">Save</string>
+    <string name="load">Load</string>
     <string name="switch_view">Switch view</string>
     <string name="switch_image">Switch image</string>
     <string name="center">center</string>
@@ -191,6 +192,7 @@
     <string name="recipe_102_title">102 アプリケーションの終了を検知する</string>
     <string name="recipe_103_title">103 自動的にスリープしないようにする</string>
     <string name="recipe_104_title">104 URLエンコードする</string>
+    <string name="recipe_105_title">105 プリファレンスにデータを保存する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
