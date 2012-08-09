@@ -189,6 +189,7 @@
     <string name="recipe_090_title">090..095 インテント</string>
     <string name="recipe_101_title">101 検索結果をListViewに表示する</string>
     <string name="recipe_102_title">102 アプリケーションの終了を検知する</string>
+    <string name="recipe_103_title">103 自動的にスリープしないようにする</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

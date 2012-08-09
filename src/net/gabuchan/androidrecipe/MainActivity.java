@@ -2,6 +2,7 @@
 package net.gabuchan.androidrecipe;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import net.gabuchan.androidrecipe.recipe016.Recipe016Activity;
@@ -80,6 +81,7 @@ import net.gabuchan.androidrecipe.recipe089.Recipe089Activity;
 import net.gabuchan.androidrecipe.recipe090.Recipe090Activity;
 import net.gabuchan.androidrecipe.recipe101.Recipe101Activity;
 import net.gabuchan.androidrecipe.recipe102.Recipe102Activity;
+import net.gabuchan.androidrecipe.recipe103.Recipe103Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -170,7 +172,11 @@ public class MainActivity extends ListActivity {
         mRecipes.add(new Recipe(R.string.recipe_090_title, Recipe090Activity.class));
         mRecipes.add(new Recipe(R.string.recipe_101_title, Recipe101Activity.class));
         mRecipes.add(new Recipe(R.string.recipe_102_title, Recipe102Activity.class));
+        mRecipes.add(new Recipe(R.string.recipe_103_title, Recipe103Activity.class));
 
+        // デバッグ用
+        Collections.reverse(mRecipes);
+        
         List<String> titles = new ArrayList<String>();
         for (Recipe recipe : mRecipes) {
             titles.add(getString(recipe.resId));
