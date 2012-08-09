@@ -111,6 +111,7 @@
     <string name="recognize">音声認識</string>
     <string name="mail">メール</string>
     <string name="mail_attache">メール添付</string>
+    <string name="show_log">ログを見ながら動かしてください</string>
     
     <string name="recipe_016_title">016 ボタンを使う</string>
     <string name="recipe_017_title">017 イメージボタンを使う</string>
@@ -187,6 +188,7 @@
     <string name="recipe_089_title">089 シェイクを検知する</string>
     <string name="recipe_090_title">090..095 インテント</string>
     <string name="recipe_101_title">101 検索結果をListViewに表示する</string>
+    <string name="recipe_102_title">102 アプリケーションの終了を検知する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
