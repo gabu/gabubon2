@@ -193,6 +193,7 @@
     <string name="recipe_103_title">103 自動的にスリープしないようにする</string>
     <string name="recipe_104_title">104 URLエンコードする</string>
     <string name="recipe_105_title">105 プリファレンスにデータを保存する</string>
+    <string name="recipe_106_title">106 XMLをパースする</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
