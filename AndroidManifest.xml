@@ -281,6 +281,9 @@
         <activity
             android:name=".recipe103.Recipe103Activity"
             android:label="@string/recipe_103_title" />
+        <activity
+            android:name=".recipe104.Recipe104Activity"
+            android:label="@string/recipe_104_title" />
     </application>
 
 </manifest>
