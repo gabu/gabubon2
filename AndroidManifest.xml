@@ -296,6 +296,9 @@
         <activity
             android:name=".recipe108.MyPreferenceActivity"
             android:label="@string/recipe_108_title" />
+        <activity
+            android:name=".recipe110.Recipe110Activity"
+            android:label="@string/recipe_110_title" />
     </application>
 
 </manifest>

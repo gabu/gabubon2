@@ -219,6 +219,7 @@
     <string name="recipe_106_title">106 XMLをパースする</string>
     <string name="recipe_107_title">107 文字列からMD5を取得する</string>
     <string name="recipe_108_title">108 設定画面を作成する</string>
+    <string name="recipe_110_title">110 JSON形式のデータを扱う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
