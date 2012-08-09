@@ -222,6 +222,7 @@
     <string name="recipe_108_title">108 設定画面を作成する</string>
     <string name="recipe_109_title">109 ZIPファイルを解凍する</string>
     <string name="recipe_110_title">110 JSON形式のデータを扱う</string>
+    <string name="recipe_112_title">112 連絡先の一覧を表示する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

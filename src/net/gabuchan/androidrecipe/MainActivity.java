@@ -89,6 +89,7 @@ import net.gabuchan.androidrecipe.recipe107.Recipe107Activity;
 import net.gabuchan.androidrecipe.recipe108.MyPreferenceActivity;
 import net.gabuchan.androidrecipe.recipe109.Recipe109Activity;
 import net.gabuchan.androidrecipe.recipe110.Recipe110Activity;
+import net.gabuchan.androidrecipe.recipe112.Recipe112Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -187,6 +188,7 @@ public class MainActivity extends ListActivity {
         mRecipes.add(new Recipe(R.string.recipe_108_title, MyPreferenceActivity.class));
         mRecipes.add(new Recipe(R.string.recipe_109_title, Recipe109Activity.class));
         mRecipes.add(new Recipe(R.string.recipe_110_title, Recipe110Activity.class));
+        mRecipes.add(new Recipe(R.string.recipe_112_title, Recipe112Activity.class));
 
         // デバッグ用
         Collections.reverse(mRecipes);
