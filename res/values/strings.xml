@@ -114,6 +114,8 @@
     <string name="mail_attache">メール添付</string>
     <string name="show_log">ログを見ながら動かしてください</string>
     <string name="unzip">SDカードにassetsの.zipファイルを解凍します</string>
+    <string name="twitter_auth">Twitter認証</string>
+    <string name="tweet">つぶやく</string>
     
     <string name="category1">カテゴリの名前</string>
     <string name="checkbox_title">チェックボックス</string>
@@ -224,6 +226,7 @@
     <string name="recipe_110_title">110 JSON形式のデータを扱う</string>
     <string name="recipe_112_title">112 連絡先の一覧を表示する</string>
     <string name="recipe_113_title">113 ネットワークの接続状況を判定する</string>
+    <string name="recipe_114_title">114 Twitter4Jを使う</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>

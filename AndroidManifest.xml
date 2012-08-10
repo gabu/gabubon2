@@ -310,6 +310,22 @@
         <activity
             android:name=".recipe113.Recipe113Activity"
             android:label="@string/recipe_113_title" />
+        <activity
+            android:name=".recipe114.Recipe114Activity"
+            android:label="@string/recipe_114_title"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="gabu" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
