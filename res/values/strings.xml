@@ -121,6 +121,7 @@
     <string name="can_restore">リストアできてる？</string>
     <string name="start_download">ダウンロード開始</string>
     <string name="go_setting">上の設定画面を呼んでみる</string>
+    <string name="track">クリックを計測</string>
     
     <string name="category1">カテゴリの名前</string>
     <string name="checkbox_title">チェックボックス</string>
@@ -235,6 +236,7 @@
     <string name="recipe_116_title">116 Backup Serviceで自動バックアップする</string>
     <string name="recipe_117_title">117 Download Managerで簡単にダウンロードする</string>
     <string name="recipe_118_title">118 設定画面を呼び出す</string>
+    <string name="recipe_119_title">119 Google Analyticsで分析する</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
