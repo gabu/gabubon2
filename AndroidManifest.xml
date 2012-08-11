@@ -22,9 +22,14 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
+        android:backupAgent=".recipe116.Recipe116BackupAgent"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIyQagef1jFiny9AWyt6JuMX1wwDxvT2Cp5Ue5AA" />
+
         <activity
             android:name=".recipe048.SplashActivity"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
@@ -327,6 +332,9 @@
                     android:scheme="gabu" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".recipe116.Recipe116Activity"
+            android:label="@string/recipe_116_title" />
     </application>
 
 </manifest>

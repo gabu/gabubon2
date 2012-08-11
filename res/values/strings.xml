@@ -116,6 +116,9 @@
     <string name="unzip">SDカードにassetsの.zipファイルを解凍します</string>
     <string name="twitter_auth">Twitter認証</string>
     <string name="tweet">つぶやく</string>
+    <string name="create_pref">プリファレンスファイルを作る</string>
+    <string name="backup_description">しばらくしてからアプリを再インストールして下のボタンでリストアできてるか確認してみてください。ただし、バックアップは非同期なのでタイミングは不定です。明示的に行う場合はbmgr runしてください。</string>
+    <string name="can_restore">リストアできてる？</string>
     
     <string name="category1">カテゴリの名前</string>
     <string name="checkbox_title">チェックボックス</string>
@@ -227,6 +230,7 @@
     <string name="recipe_112_title">112 連絡先の一覧を表示する</string>
     <string name="recipe_113_title">113 ネットワークの接続状況を判定する</string>
     <string name="recipe_114_title">114 Twitter4Jを使う</string>
+    <string name="recipe_116_title">116 Backup Serviceで自動バックアップする</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
