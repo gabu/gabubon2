@@ -344,6 +344,12 @@
         <activity
             android:name=".recipe119.Recipe119Activity"
             android:label="@string/recipe_119_title" />
+        <activity
+            android:name=".recipe120.Recipe120Activity"
+            android:label="@string/recipe_120_title" />
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
     </application>
 
 </manifest>

@@ -237,6 +237,7 @@
     <string name="recipe_117_title">117 Download Managerで簡単にダウンロードする</string>
     <string name="recipe_118_title">118 設定画面を呼び出す</string>
     <string name="recipe_119_title">119 Google Analyticsで分析する</string>
+    <string name="recipe_120_title">120 AdMobの広告を組み込む</string>
 
     <string-array name="animals_array">
         <item>いぬ</item>
