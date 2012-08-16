@@ -31,6 +31,13 @@ public class Recipe117Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_117);
 
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.GINGERBREAD) {
+            Toast.makeText(this, "このレシピは、API Level 9(Android 2.3)からのみ使えます。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
+
         // DownloadManagerを取得
         mDownloadManager = (DownloadManager) getSystemService(DOWNLOAD_SERVICE);
     }
@@ -98,7 +105,7 @@ public class Recipe117Activity extends Activity {
         // リクエストを作る
         Request request = new DownloadManager.Request(uri);
         // ダウンロードが完了してもNotificationが消えないようにできるのは11以降でした。。。
-        if (11 <= Build.VERSION.SDK_INT) {
+        if (Build.VERSION_CODES.HONEYCOMB <= Build.VERSION.SDK_INT) {
             request.setNotificationVisibility(
                     DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
         }

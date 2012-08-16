@@ -25,28 +25,34 @@ public class Recipe029Activity extends FragmentActivity {
     }
 
     public void onDefaultClick(View view) {
-        if (Build.VERSION_CODES.HONEYCOMB < Build.VERSION.SDK_INT) {
+        if (Build.VERSION_CODES.HONEYCOMB <= Build.VERSION.SDK_INT) {
             DatePicker datePicker = (DatePicker) findViewById(R.id.date_picker);
             datePicker.setCalendarViewShown(true);
             datePicker.setSpinnersShown(true);
             ((CheckBox) findViewById(R.id.calendar_check_box)).setChecked(true);
             ((CheckBox) findViewById(R.id.spinner_check_box)).setChecked(true);
+        } else {
+            showNotSupportMessage();
         }
     }
 
     public void onCalendarClick(View view) {
-        if (Build.VERSION_CODES.HONEYCOMB < Build.VERSION.SDK_INT) {
+        if (Build.VERSION_CODES.HONEYCOMB <= Build.VERSION.SDK_INT) {
             DatePicker datePicker = (DatePicker) findViewById(R.id.date_picker);
             boolean checked = ((CheckBox) view).isChecked();
             datePicker.setCalendarViewShown(checked);
+        } else {
+            showNotSupportMessage();
         }
     }
 
     public void onSpinnerClick(View view) {
-        if (Build.VERSION_CODES.HONEYCOMB < Build.VERSION.SDK_INT) {
+        if (Build.VERSION_CODES.HONEYCOMB <= Build.VERSION.SDK_INT) {
             DatePicker datePicker = (DatePicker) findViewById(R.id.date_picker);
             boolean checked = ((CheckBox) view).isChecked();
             datePicker.setSpinnersShown(checked);
+        } else {
+            showNotSupportMessage();
         }
     }
 
@@ -70,6 +76,10 @@ public class Recipe029Activity extends FragmentActivity {
         dialog.show();
     }
 
+    private void showNotSupportMessage() {
+        showToast("calendarViewShown, spinnersShownは、API level 11(Android 3.0)からのみ使えます。");
+    }
+    
     private void showToast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }

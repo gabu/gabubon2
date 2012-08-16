@@ -2,7 +2,6 @@
 package net.gabuchan.androidrecipe;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import net.gabuchan.androidrecipe.recipe016.Recipe016Activity;

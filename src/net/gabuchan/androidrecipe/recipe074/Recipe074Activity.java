@@ -6,12 +6,14 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.media.audiofx.Equalizer;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 @TargetApi(9)
 public class Recipe074Activity extends Activity {
@@ -28,6 +30,13 @@ public class Recipe074Activity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_074);
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.GINGERBREAD) {
+            Toast.makeText(this, "このレシピは、API Level 9(Android 2.3)からのみ使えます。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
 
         mLinearLayout = (LinearLayout) findViewById(R.id.linear_layout);
     }

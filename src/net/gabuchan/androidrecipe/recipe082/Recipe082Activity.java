@@ -23,6 +23,7 @@ import android.hardware.Camera.PictureCallback;
 import android.hardware.Camera.Size;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -93,6 +94,13 @@ public class Recipe082Activity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_078);
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.GINGERBREAD) {
+            Toast.makeText(this, "このレシピは、API Level 9(Android 2.3)からのみ使えます。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
 
         // CameraPreviewを生成
         mCameraPreview = new CameraPreview(this);

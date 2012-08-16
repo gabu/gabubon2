@@ -6,7 +6,9 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.media.audiofx.Visualizer;
+import android.os.Build;
 import android.os.Bundle;
+import android.widget.Toast;
 
 @TargetApi(9)
 public class Recipe073Activity extends Activity {
@@ -23,6 +25,13 @@ public class Recipe073Activity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_073);
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.GINGERBREAD) {
+            Toast.makeText(this, "このレシピは、API Level 9(Android 2.3)からのみ使えます。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
 
         mVisualizerView = (VisualizerView) findViewById(R.id.visualizer_view);
     }
