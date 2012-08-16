@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
 public class SplashActivity extends Activity {
-    Handler mHandler = new Handler();
+    private Handler mHandler = new Handler();
     
     @Override
     public void onCreate(Bundle savedInstanceState) {

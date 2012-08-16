@@ -10,10 +10,10 @@ import android.view.View;
 
 public class Recipe037Activity extends Activity {
     // プログレスダイアログ
-    ProgressDialog mProgressDialog;
+    private ProgressDialog mProgressDialog;
 
     // ハンドラー
-    Handler mHandler = new Handler();
+    private Handler mHandler = new Handler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

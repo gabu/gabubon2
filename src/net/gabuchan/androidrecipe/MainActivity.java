@@ -105,7 +105,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends ListActivity {
-    List<Recipe> mRecipes = new ArrayList<Recipe>();
+    private List<Recipe> mRecipes = new ArrayList<Recipe>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

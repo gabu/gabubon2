@@ -26,10 +26,10 @@ public class Recipe057Activity extends ListActivity {
     private static final String FILE_NAME = "list_data.dat";
 
     // リストデータ
-    ArrayList<ListItem> mItems;
+    private ArrayList<ListItem> mItems;
 
     // アダプター
-    ListItemAdapter mAdapter;
+    private ListItemAdapter mAdapter;
 
     @SuppressWarnings("unchecked")
     @Override

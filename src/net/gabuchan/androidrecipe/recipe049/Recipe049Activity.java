@@ -16,8 +16,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 
 public class Recipe049Activity extends Activity {
-    Spinner mSpinner;
-    ImageView mImageView;
+    private Spinner mSpinner;
+    private ImageView mImageView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

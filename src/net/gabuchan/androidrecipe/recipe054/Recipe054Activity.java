@@ -16,7 +16,7 @@ import android.widget.ListView;
 
 public class Recipe054Activity extends ListActivity {
     // アダプター
-    ArrayAdapter<String> mAdapter;
+    private ArrayAdapter<String> mAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -20,10 +20,10 @@ import android.widget.TextView;
 
 public class Recipe056Activity extends ListActivity {
     // アダプター
-    ListItemAdapter mAdapter;
+    private ListItemAdapter mAdapter;
 
     // リストデータ
-    ArrayList<ListItem> mItems;
+    private ArrayList<ListItem> mItems;
 
     @SuppressWarnings("unchecked")
     @Override

@@ -10,8 +10,8 @@ import android.widget.ImageView.ScaleType;
 import android.widget.ViewSwitcher;
 
 public class Recipe018Activity extends Activity {
-    ImageView mImageView;
-    int mCurrentImageResId = R.drawable.gabu;
+    private ImageView mImageView;
+    private int mCurrentImageResId = R.drawable.gabu;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {

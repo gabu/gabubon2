@@ -18,7 +18,7 @@ import android.widget.ImageView;
 public class Recipe065Activity extends Activity {
     private static final int REQUEST_CODE = 1;
 
-    ImageView mImageView;
+    private ImageView mImageView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

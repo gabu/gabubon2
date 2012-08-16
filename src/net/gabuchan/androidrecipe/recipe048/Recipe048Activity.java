@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 public class Recipe048Activity extends Activity {
-    Handler mHandler = new Handler();
+    private Handler mHandler = new Handler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

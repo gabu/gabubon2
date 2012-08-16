@@ -10,9 +10,9 @@ import android.view.View;
 
 public class Recipe068Activity extends Activity {
     // サウンドプール
-    SoundPool mSoundPool;
+    private SoundPool mSoundPool;
     // サウンドID
-    int mSoundId;
+    private int mSoundId;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

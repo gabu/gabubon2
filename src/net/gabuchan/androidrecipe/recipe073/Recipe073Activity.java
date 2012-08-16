@@ -11,13 +11,13 @@ import android.os.Bundle;
 @TargetApi(9)
 public class Recipe073Activity extends Activity {
     // メディアプレイヤー
-    MediaPlayer mMediaPlayer;
+    private MediaPlayer mMediaPlayer;
 
     // ビジュアライザー
-    Visualizer mVisualizer;
+    private Visualizer mVisualizer;
 
     // Visualizerの値（波形データ）を描画するView
-    VisualizerView mVisualizerView;
+    private VisualizerView mVisualizerView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

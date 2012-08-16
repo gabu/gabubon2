@@ -19,15 +19,15 @@ import android.widget.Toast;
 
 public class Recipe071Activity extends Activity {
     // プレビューのためのSurfaceView
-    SurfaceView mCameraView;
+    private SurfaceView mCameraView;
     // メディアレコーダー
-    MediaRecorder mRecorder;
+    private MediaRecorder mRecorder;
     // 録画中フラグ
-    boolean isRecording = false;
+    private boolean isRecording = false;
     // 録画ボタン
-    Button mRecordButton;
+    private Button mRecordButton;
     // 録画した動画ファイルのパス
-    String mPath;
+    private String mPath;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

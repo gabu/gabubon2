@@ -17,7 +17,7 @@ import android.view.View;
 import android.widget.Toast;
 
 public class Recipe035Activity extends Activity {
-    Handler mHandler = new Handler();
+    private Handler mHandler = new Handler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

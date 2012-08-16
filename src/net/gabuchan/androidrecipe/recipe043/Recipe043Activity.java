@@ -16,9 +16,9 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 
 public class Recipe043Activity extends FragmentActivity {
-    TabHost mTabHost;
-    ViewPager mViewPager;
-    TabsAdapter mTabsAdapter;
+    private TabHost mTabHost;
+    private ViewPager mViewPager;
+    private TabsAdapter mTabsAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 public class Recipe069Activity extends Activity {
     // メディアプレイヤー
-    MediaPlayer mMediaPlayer;
+    private MediaPlayer mMediaPlayer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

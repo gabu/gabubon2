@@ -12,7 +12,7 @@ import android.webkit.WebViewClient;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class Recipe031Activity extends Activity {
-    WebView mWebView;
+    private WebView mWebView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

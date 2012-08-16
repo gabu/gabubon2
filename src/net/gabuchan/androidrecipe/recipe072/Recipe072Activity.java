@@ -15,8 +15,8 @@ import android.widget.VideoView;
 public class Recipe072Activity extends Activity {
     private static final int REQUEST_CODE = 1;
 
-    VideoView mVideoView;
-    MediaController mMediaController;
+    private VideoView mVideoView;
+    private MediaController mMediaController;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

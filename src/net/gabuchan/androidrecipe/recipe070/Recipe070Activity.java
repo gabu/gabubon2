@@ -18,17 +18,17 @@ import android.widget.Toast;
 
 public class Recipe070Activity extends Activity {
     // メディアレコーダー
-    MediaRecorder mRecorder;
+    private MediaRecorder mRecorder;
     // 録音中フラグ
-    boolean isRecording = false;
+    private boolean isRecording = false;
     // 録音ボタン
-    Button mRecordButton;
+    private Button mRecordButton;
     // 再生ボタン
-    Button mPlayButton;
+    private Button mPlayButton;
     // 録音した音声ファイルのパス
-    String mPath;
+    private String mPath;
     // 確認用のメディアプレイヤー
-    MediaPlayer mPlayer;
+    private MediaPlayer mPlayer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
