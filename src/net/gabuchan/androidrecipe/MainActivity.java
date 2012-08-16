@@ -204,9 +204,6 @@ public class MainActivity extends ListActivity {
         mRecipes.add(new Recipe(R.string.recipe_119_title, Recipe119Activity.class));
         mRecipes.add(new Recipe(R.string.recipe_120_title, Recipe120Activity.class));
 
-        // デバッグ用
-        Collections.reverse(mRecipes);
-        
         List<String> titles = new ArrayList<String>();
         for (Recipe recipe : mRecipes) {
             titles.add(getString(recipe.resId));
