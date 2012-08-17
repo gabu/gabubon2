@@ -16,18 +16,18 @@
             android:layout_weight="1"
             android:inputType="textMultiLine" />
 
-        <TextView 
-            android:id="@+id/count" 
+        <TextView
+            android:id="@+id/count"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="140"/>
-        
+            android:text="140" />
+
         <Button
             android:id="@+id/tweet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onTweetClick"
             android:enabled="false"
+            android:onClick="onTweetClick"
             android:text="@string/tweet" />
     </LinearLayout>
 

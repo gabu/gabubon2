@@ -107,35 +107,35 @@ public class Recipe114Activity extends Activity {
         mButton = (Button) findViewById(R.id.tweet);
         // 文字数をカウントしてボタンを制御する
         mEditText.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				int textColor;
-				int length = 140 - s.length();
-				// 140文字をオーバーした時は文字数を赤色に
-				if (length < 0) {
-					textColor = Color.RED;
-				}else {
-					textColor = Color.BLACK;
-				}
-				mTextView.setTextColor(textColor);
-				mTextView.setText(String.valueOf(length));
-				// 文字数が0文字または140文字以上の時はボタンを無効
-				if (s.length() == 0 || s.length() > 140) {
-					mButton.setEnabled(false);
-				} else {
-					mButton.setEnabled(true);
-				}
-			}
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                int textColor;
+                int length = 140 - s.length();
+                // 140文字をオーバーした時は文字数を赤色に
+                if (length < 0) {
+                    textColor = Color.RED;
+                } else {
+                    textColor = Color.BLACK;
+                }
+                mTextView.setTextColor(textColor);
+                mTextView.setText(String.valueOf(length));
+                // 文字数が0文字または140文字以上の時はボタンを無効
+                if (s.length() == 0 || s.length() > 140) {
+                    mButton.setEnabled(false);
+                } else {
+                    mButton.setEnabled(true);
+                }
+            }
 
-			@Override
-			public void afterTextChanged(Editable s) {
-			}
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
 
-			@Override
-			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-			}
-		});
-        
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+        });
+
         mHandler = new Recipe114Handler(this);
 
         if (hasAccessToken()) {
