@@ -37,10 +37,10 @@ Android SDK開発のレシピ 第2版（仮） (xxx-xxxxxxxxxx)に掲載され�
 
 * libs/twitter4j-core-android-2.2.6.jar
 * libs/twitter4j-async-android-2.2.6.jar
-** <http://twitter4j.org/ja/index.html>
+ * <http://twitter4j.org/ja/index.html>
 * libs/libGoogleAnalytics.jar
-** <http://www.google.com/analytics/tos.html>
+ * <http://www.google.com/analytics/tos.html>
 * libs/GoogleAdMobAdsSdk-6.1.0.jar
-** <https://developers.google.com/readme/terms>
+ * <https://developers.google.com/readme/terms>
 * libs/android-support-v4.jar
-** <http://source.android.com/source/licenses.html>
+ * <http://source.android.com/source/licenses.html>
