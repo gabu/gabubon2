@@ -29,8 +29,8 @@ public class Recipe089Activity extends Activity {
         // SensorManagerを取得して
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         // ShakeListenerを作って
-        ShakeListener shakeListener = new ShakeListener(sensorManager);
-        shakeListener.setOnShakeListener(new OnShakeListener() {
+        mShakeListener = new ShakeListener(sensorManager);
+        mShakeListener.setOnShakeListener(new OnShakeListener() {
             @Override
             public void onShake() {
                 // シェイクを検知した時に呼び出される
