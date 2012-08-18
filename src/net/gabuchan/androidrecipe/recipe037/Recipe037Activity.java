@@ -38,8 +38,11 @@ public class Recipe037Activity extends Activity {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        // プログレスダイアログを閉じる
-                        mProgressDialog.dismiss();
+                        try {
+                            // プログレスダイアログを閉じる
+                            mProgressDialog.dismiss();
+                        } catch(IllegalArgumentException e) {
+                        }
                     }
                 });
             }
@@ -69,8 +72,11 @@ public class Recipe037Activity extends Activity {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        // プログレスダイアログを閉じる
-                        mProgressDialog.dismiss();
+                        try {
+                            // プログレスダイアログを閉じる
+                            mProgressDialog.dismiss();
+                        } catch(IllegalArgumentException e) {
+                        }
                     }
                 });
             }
