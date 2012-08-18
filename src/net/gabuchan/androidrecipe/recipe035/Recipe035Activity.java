@@ -50,7 +50,7 @@ public class Recipe035Activity extends Activity {
                 .setContentInfo("インフォ") // 11以降
                 .setNumber(99) // 11以降
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.gabu)) // 11以降
-                .getNotification();
+                .build();
 
         // NotificationManagerを取得して
         final NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -72,7 +72,7 @@ public class Recipe035Activity extends Activity {
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_stat_notify_gabu)
                 .setSound(Uri.parse(uriString))
-                .getNotification();
+                .build();
 
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         manager.notify(1, notification);
@@ -90,7 +90,7 @@ public class Recipe035Activity extends Activity {
                 .setSmallIcon(R.drawable.ic_stat_notify_gabu)
                 .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_VIBRATE)
                 .setLights(Color.RED, 1000, 2000)
-                .getNotification();
+                .build();
 
         final NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
