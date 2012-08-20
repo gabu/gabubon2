@@ -1,6 +1,8 @@
 
 package net.gabuchan.androidrecipe.recipe037;
 
+import java.util.concurrent.TimeUnit;
+
 import net.gabuchan.androidrecipe.R;
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -30,7 +32,7 @@ public class Recipe037Activity extends Activity {
             public void run() {
                 try {
                     // 時間のかかる処理のつもりで5秒スリープ
-                    Thread.sleep(5 * 1000);
+                    TimeUnit.SECONDS.sleep(5);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -60,7 +62,7 @@ public class Recipe037Activity extends Activity {
                     mProgressDialog.setProgress(i);
                     try {
                         // サンプルのため1秒スリープ
-                        Thread.sleep(1 * 1000);
+                        TimeUnit.SECONDS.sleep(1);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -82,6 +84,5 @@ public class Recipe037Activity extends Activity {
         mProgressDialog.setMessage("しばらくお待ちください");
         mProgressDialog.setProgressStyle(style);
         mProgressDialog.show();
-
     }
 }
