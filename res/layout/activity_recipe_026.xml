@@ -25,8 +25,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="256"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
         android:progress="50"
         android:thumb="@drawable/ic_gabu"
-        android:layout_margin="12dp" />
+        android:thumbOffset="12dp" />
 
 </LinearLayout>
