@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:dial="@drawable/image_720x720"
-        android:hand_hour="@drawable/image_20x400"
-        android:hand_minute="@drawable/image_20x200" />
+        android:hand_hour="@drawable/image_20x200"
+        android:hand_minute="@drawable/image_20x400" />
 
 </LinearLayout>
