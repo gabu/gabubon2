@@ -100,23 +100,25 @@ public class Recipe080Activity extends Activity {
         String currentFlashMode = params.getFlashMode();
         // サポートされているフラッシュモードのリストを取得
         List<String> supportedFlashModes = params.getSupportedFlashModes();
-        // 選択ダイアログ表示用の文字列の配列を作る
-        mSupportedFlashModes = new String[supportedFlashModes.size()];
-        for (int i = 0; i < mSupportedFlashModes.length; i++) {
-            // 1つ取り出して
-            String flashMode = supportedFlashModes.get(i);
-            // 文字列の配列に入れて
-            mSupportedFlashModes[i] = flashMode;
-            // 現在のフラッシュモードと比較して
-            if (currentFlashMode.equals(flashMode)) {
-                // 選択ダイアログの初期値としてインデックスを覚えておく
-                mCurrentFlashModeIndex = i;
+        if(supportedFlashModes != null) {
+            // 選択ダイアログ表示用の文字列の配列を作る
+            mSupportedFlashModes = new String[supportedFlashModes.size()];
+            for (int i = 0; i < mSupportedFlashModes.length; i++) {
+                // 1つ取り出して
+                String flashMode = supportedFlashModes.get(i);
+                // 文字列の配列に入れて
+                mSupportedFlashModes[i] = flashMode;
+                // 現在のフラッシュモードと比較して
+                if (currentFlashMode.equals(flashMode)) {
+                    // 選択ダイアログの初期値としてインデックスを覚えておく
+                    mCurrentFlashModeIndex = i;
+                }
             }
+            // 撮影された写真も90度回転する
+            params.setRotation(90);
+            // 90度回転したパラメータをセット
+            mCamera.setParameters(params);
         }
-        // 撮影された写真も90度回転する
-        params.setRotation(90);
-        // 90度回転したパラメータをセット
-        mCamera.setParameters(params);
     }
 
     @Override
@@ -134,27 +136,31 @@ public class Recipe080Activity extends Activity {
     }
 
     public void onFlashModeClick(View view) {
-        // 選択ダイアログを表示する
-        new AlertDialog.Builder(this)
-                .setSingleChoiceItems(mSupportedFlashModes,
-                        mCurrentFlashModeIndex,
-                        new OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int witch) {
-                                // 選択されたインデックスを覚えておく
-                                mCurrentFlashModeIndex = witch;
-                                // カメラパラメータを取得して
-                                Parameters params = mCamera.getParameters();
-                                // フラッシュモードを取得して
-                                String flashMode = mSupportedFlashModes[witch];
-                                // カメラパラメータにフラッシュモードをセット
-                                params.setFlashMode(flashMode);
-                                // カメラパラメータをカメラにセット
-                                mCamera.setParameters(params);
-                                // 勝手に閉じないので閉じる
-                                dialog.dismiss();
-                            }
-                        }).show();
+        if(mSupportedFlashModes != null) {
+            // 選択ダイアログを表示する
+            new AlertDialog.Builder(this)
+                    .setSingleChoiceItems(mSupportedFlashModes,
+                            mCurrentFlashModeIndex,
+                            new OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int witch) {
+                                    // 選択されたインデックスを覚えておく
+                                    mCurrentFlashModeIndex = witch;
+                                    // カメラパラメータを取得して
+                                    Parameters params = mCamera.getParameters();
+                                    // フラッシュモードを取得して
+                                    String flashMode = mSupportedFlashModes[witch];
+                                    // カメラパラメータにフラッシュモードをセット
+                                    params.setFlashMode(flashMode);
+                                    // カメラパラメータをカメラにセット
+                                    mCamera.setParameters(params);
+                                    // 勝手に閉じないので閉じる
+                                    dialog.dismiss();
+                                }
+                            }).show();
+        } else {
+            showToast("フラッシュは利用できません。");
+        }
     }
 
     private void showToast(String text) {
