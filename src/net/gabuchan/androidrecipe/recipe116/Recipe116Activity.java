@@ -23,24 +23,29 @@ public class Recipe116Activity extends Activity {
 
         // BackupManagerインスタンスを生成して
         BackupManager backupManager = new BackupManager(this);
-        // 明示的にリストアを要求（オブザーバーを指定することもできる）
-        backupManager.requestRestore(new RestoreObserver() {
-            @Override
-            public void restoreStarting(int numPackages) {
-                showToast("restoreStarting:numPackages=" + numPackages);
-            }
+        try {
+            // 明示的にリストアを要求（オブザーバーを指定することもできる）
+            backupManager.requestRestore(new RestoreObserver() {
+                @Override
+                public void restoreStarting(int numPackages) {
+                    showToast("restoreStarting:numPackages=" + numPackages);
+                }
 
-            @Override
-            public void onUpdate(int nowBeingRestored, String currentPackage) {
-                showToast("onUpdate:nowBeingRestored=" + nowBeingRestored + ", currentPackage="
-                        + currentPackage);
-            }
+                @Override
+                public void onUpdate(int nowBeingRestored, String currentPackage) {
+                    showToast("onUpdate:nowBeingRestored=" + nowBeingRestored + ", currentPackage="
+                            + currentPackage);
+                }
 
-            @Override
-            public void restoreFinished(int error) {
-                showToast("restoreFinished:error=" + error);
-            }
-        });
+                @Override
+                public void restoreFinished(int error) {
+                    showToast("restoreFinished:error=" + error);
+                }
+            });
+        } catch (java.lang.SecurityException e) {
+            // Android 2.2のバグです。
+            // 詳細: http://code.google.com/p/android/issues/detail?id=10094
+        }
     }
 
     public void onCreateDBClick(View view) {

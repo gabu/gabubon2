@@ -55,6 +55,8 @@ public class Recipe084Activity extends Activity {
 
         // 近接センサーを取得
         Sensor sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        // センサーがない場合
+        Toast.makeText(this, "近接センサーが見つかりませんでした＞＜", Toast.LENGTH_SHORT).show();
         // リスナーを登録
         mSensorManager.registerListener(mListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }

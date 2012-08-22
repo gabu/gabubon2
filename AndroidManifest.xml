@@ -208,7 +208,8 @@
         <activity
             android:name=".recipe071.Recipe071Activity"
             android:label="@string/recipe_071_title"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
         <activity
             android:name=".recipe072.Recipe072Activity"
             android:label="@string/recipe_072_title" />
