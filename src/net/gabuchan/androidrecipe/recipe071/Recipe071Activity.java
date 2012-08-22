@@ -3,21 +3,27 @@ package net.gabuchan.androidrecipe.recipe071;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import net.gabuchan.androidrecipe.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.hardware.Camera;
+import android.hardware.Camera.Size;
 import android.media.MediaRecorder;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
+import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class Recipe071Activity extends Activity {
+    private static final String TAG = Recipe071Activity.class.getSimpleName();
     // プレビューのためのSurfaceView
     private SurfaceView mCameraView;
     // メディアレコーダー
@@ -28,6 +34,8 @@ public class Recipe071Activity extends Activity {
     private Button mRecordButton;
     // 録画した動画ファイルのパス
     private String mPath;
+    // 撮影サイズ
+    private Camera.Size mVideoSize;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +46,15 @@ public class Recipe071Activity extends Activity {
         mRecordButton = (Button) findViewById(R.id.record_button);
         // SurfaceViewも取得
         mCameraView = (SurfaceView) findViewById(R.id.camera_view);
+        // 非推奨メソッドだけどAndroid 3.0未満のためにもセット
+        // これがないとプレビューが表示されません
+        SurfaceHolder holder = mCameraView.getHolder();
+        holder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+
+        // getSupportedVideoSizes() が API Level 11以降なので
+        // 少なくともプレビューで落ちないようにサポートされているプレビューサイズを
+        // 取得して撮影サイズにする
+        mVideoSize = getMinSupportedPreviewSize();
     }
 
     public void onButtonClick(View view) {
@@ -105,7 +122,7 @@ public class Recipe071Activity extends Activity {
         // フレームレートをセット
         mRecorder.setVideoFrameRate(30);
         // 撮影サイズを指定
-        mRecorder.setVideoSize(800, 480);
+        mRecorder.setVideoSize(mVideoSize.width, mVideoSize.height);
         // ビデオエンコーダーにH264をセット
         mRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H263);
         // オーディオエンコーダーにAMR_NBをセット
@@ -143,5 +160,27 @@ public class Recipe071Activity extends Activity {
 
     private void showToast(String text) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+    }
+
+    private Camera.Size getMinSupportedPreviewSize() {
+        Camera camera = Camera.open();
+        // サポートされているプレビューサイズのリストを取得
+        List<Size> sizes = camera.getParameters().getSupportedPreviewSizes();
+        // とりあえず0番を入れておいて
+        Camera.Size minSize = sizes.get(0);
+        // 16:9ではなくて4:3で最小のサイズを探す
+        for (Camera.Size size : sizes) {
+            Log.d(TAG, String.format("SupportedPreviewSize %d x %d", size.width ,size.height));
+            if (size.width / (float)size.height > 1.4) {
+                // 少なくとも1.4以上は16:9なのでスキップ
+                continue;
+            }
+            if (size.width < minSize.width) {
+                // 小さければminSizeに入れる
+                minSize = size;
+            }
+        }
+        camera.release();
+        return minSize;
     }
 }
