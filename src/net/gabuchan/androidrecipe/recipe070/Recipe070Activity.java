@@ -58,19 +58,21 @@ public class Recipe070Activity extends Activity {
         });
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (isRecording) {
+            // 録音中だったら録音停止　
+            stopRecording();
+        }
+    }
+
     public void onRecordingClick(View view) {
         if (isRecording) {
-            // 録音中だったら
-            isRecording = false; // 録音中フラグを解除
-            // ボタンのテキストを変更
-            mRecordButton.setText(R.string.recording_start);
+            // 録音中だったら録音停止
             stopRecording();
         } else {
-            // 録音中じゃなかったら
-            isRecording = true; // 録音中フラグをセット
-            // ボタンのテキストを変更
-            mRecordButton.setText(R.string.recording_stop);
-            // 録音スタート！
+            // 録音中じゃなかったら録音スタート！
             startRecording();
         }
     }
@@ -95,6 +97,11 @@ public class Recipe070Activity extends Activity {
     }
 
     private void startRecording() {
+        // 録音中フラグをセット
+        isRecording = true;
+        // ボタンのテキストを変更
+        mRecordButton.setText(R.string.recording_stop);
+
         // 保存先のディレクトリのFileオブジェクトを生成
         File dir = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PODCASTS), "gabubon2");
@@ -133,6 +140,10 @@ public class Recipe070Activity extends Activity {
     }
 
     private void stopRecording() {
+        // 録音中フラグを解除
+        isRecording = false;
+        // ボタンのテキストを変更
+        mRecordButton.setText(R.string.recording_start);
         // 録音を停止して
         mRecorder.stop();
         // 解放

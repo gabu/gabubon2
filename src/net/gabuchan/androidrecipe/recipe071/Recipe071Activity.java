@@ -57,19 +57,21 @@ public class Recipe071Activity extends Activity {
         mVideoSize = getMinSupportedPreviewSize();
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (isRecording) {
+            // 録画中だったら録画停止　
+            stopRecording();
+        }
+    }
+
     public void onButtonClick(View view) {
         if (isRecording) {
-            // 録画中だったら
-            isRecording = false; // 録画中フラグを解除
-            // ボタンのテキストを変更
-            mRecordButton.setText(R.string.start);
+            // 録画中だったら録画停止
             stopRecording();
         } else {
-            // 録画中じゃなかったら
-            isRecording = true; // 録画中フラグをセット
-            // ボタンのテキストを変更
-            mRecordButton.setText(R.string.stop);
-            // 録画スタート！
+            // 録画中じゃなかったら録画スタート！
             startRecording();
         }
     }
@@ -91,6 +93,11 @@ public class Recipe071Activity extends Activity {
     }
 
     private void startRecording() {
+        // 録画中フラグをセット
+        isRecording = true;
+        // ボタンのテキストを変更
+        mRecordButton.setText(R.string.stop);
+
         // 保存先のディレクトリのFileオブジェクトを生成
         File dir = new File(Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_MOVIES), "gabubon2");
@@ -146,6 +153,10 @@ public class Recipe071Activity extends Activity {
     }
 
     private void stopRecording() {
+        // 録画中フラグを解除
+        isRecording = false;
+        // ボタンのテキストを変更
+        mRecordButton.setText(R.string.start);
         // 録画を停止して
         mRecorder.stop();
         // 解放
@@ -170,8 +181,8 @@ public class Recipe071Activity extends Activity {
         Camera.Size minSize = sizes.get(0);
         // 16:9ではなくて4:3で最小のサイズを探す
         for (Camera.Size size : sizes) {
-            Log.d(TAG, String.format("SupportedPreviewSize %d x %d", size.width ,size.height));
-            if (size.width / (float)size.height > 1.4) {
+            Log.d(TAG, String.format("SupportedPreviewSize %d x %d", size.width, size.height));
+            if (size.width / (float) size.height > 1.4) {
                 // 少なくとも1.4以上は16:9なのでスキップ
                 continue;
             }
