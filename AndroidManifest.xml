@@ -204,6 +204,7 @@
             android:label="@string/recipe_069_title" />
         <activity
             android:name=".recipe070.Recipe070Activity"
+            android:configChanges="orientation|screenSize"
             android:label="@string/recipe_070_title" />
         <activity
             android:name=".recipe071.Recipe071Activity"
