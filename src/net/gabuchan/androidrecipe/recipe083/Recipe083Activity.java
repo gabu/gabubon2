@@ -57,7 +57,9 @@ public class Recipe083Activity extends Activity {
         // 加速度センサーを取得
         Sensor sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         // センサーがない場合
-        Toast.makeText(this, "加速度センサーが見つかりませんでした＞＜", Toast.LENGTH_SHORT).show();
+        if (sensor == null) {
+            Toast.makeText(this, "加速度センサーが見つかりませんでした＞＜", Toast.LENGTH_SHORT).show();
+        }
         // リスナーを登録
         mSensorManager.registerListener(mListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }

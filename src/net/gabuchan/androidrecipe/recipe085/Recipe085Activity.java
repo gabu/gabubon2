@@ -47,7 +47,9 @@ public class Recipe085Activity extends Activity {
         // 明るさセンサーを取得
         Sensor sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         // センサーがない場合
-        Toast.makeText(this, "明るさセンサーが見つかりませんでした＞＜", Toast.LENGTH_SHORT).show();
+        if (sensor == null) {
+            Toast.makeText(this, "明るさセンサーが見つかりませんでした＞＜", Toast.LENGTH_SHORT).show();
+        }
         // リスナーを登録
         mSensorManager.registerListener(mListener, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
