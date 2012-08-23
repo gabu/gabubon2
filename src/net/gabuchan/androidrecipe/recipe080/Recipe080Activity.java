@@ -100,6 +100,16 @@ public class Recipe080Activity extends Activity {
         String currentFlashMode = params.getFlashMode();
         // サポートされているフラッシュモードのリストを取得
         List<String> supportedFlashModes = params.getSupportedFlashModes();
+
+        // カメラのフラッシュが搭載されているかチェック
+        if (supportedFlashModes == null || supportedFlashModes.size() == 0) {
+            Toast.makeText(this,
+                    "このレシピは、カメラのフラッシュを搭載している端末のみ使えます。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
+
         // 選択ダイアログ表示用の文字列の配列を作る
         mSupportedFlashModes = new String[supportedFlashModes.size()];
         for (int i = 0; i < mSupportedFlashModes.length; i++) {
