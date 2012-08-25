@@ -2,6 +2,7 @@
 package net.gabuchan.androidrecipe.recipe077;
 
 import net.gabuchan.androidrecipe.R;
+import net.gabuchan.androidrecipe.view.CameraPreview;
 import android.app.Activity;
 import android.hardware.Camera;
 import android.os.Bundle;
@@ -38,29 +39,17 @@ public class Recipe077Activity extends Activity {
     }
 
     @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-        if (hasFocus == false) {
-            // フォーカスを失う時は何もしない
-            return;
-        }
-        // RelativeLayoutに
-        RelativeLayout container = (RelativeLayout) findViewById(R.id.preview_container);
-        // OverlayViewを
-        OverlayView overlayView = new OverlayView(this,
-                container.getWidth(),
-                container.getHeight());
-        // 追加して重ねる！
-        container.addView(overlayView);
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
 
         // カメラを取得
         mCamera = Camera.open();
+        // 今回は縦固定なのでプレビューを90度回転する
+        mCamera.setDisplayOrientation(90);
+        // CameraPreviewにCameraを渡してあげる
         mCameraPreview.setCamera(mCamera);
+        // プレビュースタート
+        mCamera.startPreview();
     }
 
     @Override

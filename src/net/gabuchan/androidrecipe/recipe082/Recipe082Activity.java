@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.List;
 
 import net.gabuchan.androidrecipe.R;
+import net.gabuchan.androidrecipe.view.CameraPreview;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -113,7 +114,7 @@ public class Recipe082Activity extends Activity {
     protected void onResume() {
         super.onResume();
         if (Camera.getNumberOfCameras() < 2) {
-            showToast("フロントカメラがありません。");
+            showToast("このレシピは、フロントカメラがある端末のみ使えます。");
             finish();
             return;
         }
@@ -147,6 +148,10 @@ public class Recipe082Activity extends Activity {
         params.setRotation(270);
         // パラメータをセット
         mCamera.setParameters(params);
+        // 今回は縦固定なのでプレビューを90度回転する
+        mCamera.setDisplayOrientation(90);
+        // プレビュースタート
+        mCamera.startPreview();
     }
 
     @Override

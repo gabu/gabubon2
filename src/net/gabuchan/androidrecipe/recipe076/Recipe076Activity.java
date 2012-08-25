@@ -2,6 +2,7 @@
 package net.gabuchan.androidrecipe.recipe076;
 
 import net.gabuchan.androidrecipe.R;
+import net.gabuchan.androidrecipe.view.CameraPreview;
 import android.app.Activity;
 import android.hardware.Camera;
 import android.os.Bundle;
@@ -31,7 +32,12 @@ public class Recipe076Activity extends Activity {
 
         // カメラを取得
         mCamera = Camera.open();
+        // 今回は縦固定なのでプレビューを90度回転する
+        mCamera.setDisplayOrientation(90);
+        // CameraPreviewにCameraを渡してあげる
         mCameraPreview.setCamera(mCamera);
+        // プレビュースタート
+        mCamera.startPreview();
     }
 
     @Override

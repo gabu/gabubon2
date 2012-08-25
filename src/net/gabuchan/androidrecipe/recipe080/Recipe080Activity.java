@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.List;
 
 import net.gabuchan.androidrecipe.R;
+import net.gabuchan.androidrecipe.view.CameraPreview;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -123,10 +124,14 @@ public class Recipe080Activity extends Activity {
                 mCurrentFlashModeIndex = i;
             }
         }
-        // 撮影された写真も90度回転する
+        // 今回は縦固定なので撮影する写真を90度回転する
         params.setRotation(90);
-        // 90度回転したパラメータをセット
+        // パラメータをセット
         mCamera.setParameters(params);
+        // 今回は縦固定なのでプレビューを90度回転する
+        mCamera.setDisplayOrientation(90);
+        // プレビュースタート
+        mCamera.startPreview();
     }
 
     @Override
