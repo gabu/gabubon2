@@ -19,16 +19,16 @@
         android:id="@+id/seek_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp" />
+        android:padding="16dp" />
 
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="256"
-        android:paddingLeft="12dp"
-        android:paddingRight="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:progress="50"
         android:thumb="@drawable/ic_gabu"
-        android:thumbOffset="12dp" />
+        android:thumbOffset="16dp" />
 
 </LinearLayout>
