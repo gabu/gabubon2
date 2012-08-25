@@ -108,7 +108,13 @@ public class Recipe079Activity extends Activity {
 
         // カメラを取得
         mCamera = Camera.open();
-        mCameraPreview.setCamera(mCamera);
+        // カメラがなかったら
+        if (mCamera == null) {
+            Toast.makeText(this, "カメラが搭載されていないか接続できませんでした。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
 
         // カメラパラメータを取得して
         Parameters params = mCamera.getParameters();
@@ -137,6 +143,8 @@ public class Recipe079Activity extends Activity {
         mCamera.setParameters(params);
         // 今回は縦固定なのでプレビューを90度回転する
         mCamera.setDisplayOrientation(90);
+        // CameraPreviewにCameraを渡してあげる
+        mCameraPreview.setCamera(mCamera);
         // プレビュースタート
         mCamera.startPreview();
     }

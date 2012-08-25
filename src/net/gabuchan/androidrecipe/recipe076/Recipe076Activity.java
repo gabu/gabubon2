@@ -32,6 +32,13 @@ public class Recipe076Activity extends Activity {
 
         // カメラを取得
         mCamera = Camera.open();
+        // カメラがなかったら
+        if (mCamera == null) {
+            Toast.makeText(this, "カメラが搭載されていないか接続できませんでした。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
         // 今回は縦固定なのでプレビューを90度回転する
         mCamera.setDisplayOrientation(90);
         // CameraPreviewにCameraを渡してあげる

@@ -42,6 +42,17 @@ public class Recipe071Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_071);
 
+        // <uses-feature android:name="android.hardware.camera" />で
+        // アプリのインストールを制限していれば不要だけど
+        // このサンプルアプリは他のレシピを試してもらうためにも
+        // インストールを制限しないのでカメラをチェックする
+        if (isSupportCamera() == false) {
+            Toast.makeText(this, "カメラが搭載されていないか接続できませんでした。",
+                    Toast.LENGTH_SHORT).show();
+            finish();
+            return;
+        }
+
         // ボタンを取得しておく
         mRecordButton = (Button) findViewById(R.id.record_button);
         // SurfaceViewも取得
@@ -55,6 +66,17 @@ public class Recipe071Activity extends Activity {
         // 少なくともプレビューで落ちないようにサポートされているプレビューサイズを
         // 取得して撮影サイズにする
         mVideoSize = getMinSupportedPreviewSize();
+    }
+
+    private boolean isSupportCamera() {
+        Camera camera = Camera.open();
+        if (camera == null) {
+            // nullだったらカメラがないか接続できてない
+            return false;
+        } else {
+            camera.release();
+            return true;
+        }
     }
 
     @Override

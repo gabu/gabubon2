@@ -121,7 +121,6 @@ public class Recipe082Activity extends Activity {
 
         // フロントカメラを取得
         mCamera = Camera.open(1);
-        mCameraPreview.setCamera(mCamera);
 
         // カメラパラメータを取得して
         Parameters params = mCamera.getParameters();
@@ -150,6 +149,8 @@ public class Recipe082Activity extends Activity {
         mCamera.setParameters(params);
         // 今回は縦固定なのでプレビューを90度回転する
         mCamera.setDisplayOrientation(90);
+        // CameraPreviewにCameraを渡してあげる
+        mCameraPreview.setCamera(mCamera);
         // プレビュースタート
         mCamera.startPreview();
     }
