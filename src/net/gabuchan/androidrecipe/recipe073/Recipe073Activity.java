@@ -34,11 +34,7 @@ public class Recipe073Activity extends Activity {
         }
 
         mVisualizerView = (VisualizerView) findViewById(R.id.visualizer_view);
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
         // MediaPlayerを生成
         mMediaPlayer = MediaPlayer.create(this, R.raw.sound);
         // 無限ループ再生
@@ -67,19 +63,43 @@ public class Recipe073Activity extends Activity {
                 false); // FFT変換後のデータを取得する場合は、true
         // Visualizerを有効にする
         mVisualizer.setEnabled(true);
-        // 音声再生をスタート
-        mMediaPlayer.start();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // onResume()で再生しちゃうと
+        // ロックスクリーンの時点で再生されてしまうので
+        // onWindowFocusChanged()で再生するよ
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            // 音声再生をスタート
+            mMediaPlayer.start();
+        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        // 再生中なら停止
+        // 再生中なら一時停止
         if (mMediaPlayer.isPlaying()) {
-            mMediaPlayer.stop();
+            mMediaPlayer.pause();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
         // 解放
-        mMediaPlayer.release();
-        mVisualizer.release();
+        if (mMediaPlayer != null) {
+            mMediaPlayer.release();
+        }
+        if (mVisualizer != null) {
+            mVisualizer.release();
+        }
     }
 }
