@@ -32,6 +32,7 @@
 
         <activity
             android:name=".recipe048.SplashActivity"
+            android:configChanges="orientation|screenSize"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
