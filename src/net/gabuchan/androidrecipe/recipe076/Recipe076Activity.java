@@ -5,7 +5,9 @@ import net.gabuchan.androidrecipe.R;
 import android.app.Activity;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class Recipe076Activity extends Activity {
     private Camera mCamera;
@@ -39,5 +41,9 @@ public class Recipe076Activity extends Activity {
             // カメラを解放
             mCamera.release();
         }
+    }
+
+    public void onCaptureClick(View view) {
+        Toast.makeText(this, "このボタンは以降のレシピで使うので今はダミーです。", Toast.LENGTH_SHORT).show();
     }
 }
