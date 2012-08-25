@@ -79,8 +79,12 @@ public class Recipe074Activity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         // 解放
-        mMediaPlayer.release();
-        mEqualizer.release();
+        if (mMediaPlayer != null) {
+            mMediaPlayer.release();
+        }
+        if (mEqualizer != null) {
+            mEqualizer.release();
+        }
     }
 
     private void setupEqualizerFxAndUI() {
