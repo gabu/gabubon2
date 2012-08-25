@@ -39,11 +39,7 @@ public class Recipe074Activity extends Activity {
         }
 
         mLinearLayout = (LinearLayout) findViewById(R.id.linear_layout);
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
         // MediaPlayerを生成
         mMediaPlayer = MediaPlayer.create(this, R.raw.sound);
         // 無限ループ再生
@@ -51,18 +47,37 @@ public class Recipe074Activity extends Activity {
 
         // イコライザを準備
         setupEqualizerFxAndUI();
+    }
 
-        // 音声再生をスタート
-        mMediaPlayer.start();
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // onResume()で再生しちゃうと
+        // ロックスクリーンの時点で再生されてしまうので
+        // onWindowFocusChanged()で再生するよ
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            // 音声再生をスタート
+            mMediaPlayer.start();
+        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        // 再生中なら停止
+        // 再生中なら一時停止
         if (mMediaPlayer.isPlaying()) {
-            mMediaPlayer.stop();
+            mMediaPlayer.pause();
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
         // 解放
         mMediaPlayer.release();
         mEqualizer.release();
