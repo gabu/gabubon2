@@ -133,7 +133,7 @@ public class Recipe071Activity extends Activity {
         // ビデオエンコーダーにH264をセット
         mRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H263);
         // オーディオエンコーダーにAMR_NBをセット
-        mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_WB);
+        mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
         // プレビュー表示にSurfaceをセット
         mRecorder.setPreviewDisplay(mCameraView.getHolder().getSurface());
 
