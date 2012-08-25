@@ -26,6 +26,13 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     public void setCamera(Camera camera) {
         mCamera = camera;
+        if (getHolder() != null) {
+            try {
+                mCamera.setPreviewDisplay(getHolder());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void surfaceCreated(SurfaceHolder holder) {
@@ -40,11 +47,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
     }
 
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-        // カメラのプレビューストップ
-        mCamera.stopPreview();
-        // 今回は縦固定なので90度回転
-        mCamera.setDisplayOrientation(90);
-
         // Surfaceのサイズを出してみる
         Log.d(TAG, String.format("Before width=%d, height=%d", width, height));
 
@@ -65,8 +67,5 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         params.height = height;
         // 補正後のLayoutParamsをセット
         setLayoutParams(params);
-
-        // カメラのプレビュースタート
-        mCamera.startPreview();
     }
 }
