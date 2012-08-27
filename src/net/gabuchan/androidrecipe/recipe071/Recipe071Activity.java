@@ -152,7 +152,7 @@ public class Recipe071Activity extends Activity {
         mRecorder.setVideoFrameRate(30);
         // 撮影サイズを指定
         mRecorder.setVideoSize(mVideoSize.width, mVideoSize.height);
-        // ビデオエンコーダーにH264をセット
+        // ビデオエンコーダーにH263をセット
         mRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H263);
         // オーディオエンコーダーにAMR_NBをセット
         mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
