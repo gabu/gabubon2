@@ -16,11 +16,6 @@ public class Recipe101Activity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
 
         // DBをオープン
         SQLiteOpenHelper helper = new MySQLiteOpenHelper(this);
@@ -54,8 +49,8 @@ public class Recipe101Activity extends ListActivity {
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onDestroy() {
+        super.onDestroy();
         // Cursorを閉じる
         mCursor.close();
         // DBを閉じる
