@@ -28,6 +28,9 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
 
     public void setCamera(Camera camera) {
         mCamera = camera;
+        // 今回は縦固定なのでプレビューを90度回転する
+        mCamera.setDisplayOrientation(90);
+        // アスペクト比が4:3のプレビューサイズを取得する
         mPreviewSize = get4x3PreviewSize(camera);
         if (getHolder() != null) {
             try {

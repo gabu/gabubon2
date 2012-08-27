@@ -39,8 +39,6 @@ public class Recipe076Activity extends Activity {
             finish();
             return;
         }
-        // 今回は縦固定なのでプレビューを90度回転する
-        mCamera.setDisplayOrientation(90);
         // CameraPreviewにCameraを渡してあげる
         mCameraPreview.setCamera(mCamera);
         // プレビュースタート

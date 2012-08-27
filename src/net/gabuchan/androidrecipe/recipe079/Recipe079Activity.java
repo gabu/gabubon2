@@ -141,8 +141,6 @@ public class Recipe079Activity extends Activity {
         params.setRotation(90);
         // パラメータをセット
         mCamera.setParameters(params);
-        // 今回は縦固定なのでプレビューを90度回転する
-        mCamera.setDisplayOrientation(90);
         // CameraPreviewにCameraを渡してあげる
         mCameraPreview.setCamera(mCamera);
         // プレビュースタート
