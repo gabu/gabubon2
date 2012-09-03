@@ -109,6 +109,7 @@
     <string name="map">Googleマップ</string>
     <string name="share">共有</string>
     <string name="image_share">画像を共有</string>
+    <string name="url_share">URLを共有</string>
     <string name="recognize">音声認識</string>
     <string name="mail">メール</string>
     <string name="mail_attache">メール添付</string>

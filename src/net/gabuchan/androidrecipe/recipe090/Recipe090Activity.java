@@ -75,6 +75,15 @@ public class Recipe090Activity extends Activity {
         startActivityForResult(intent, REQUEST_CODE_PICK_IMAGE);
     }
 
+    public void onUrlShareClick(View view) {
+        // URlを共有する
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, "http://d.hatena.ne.jp/gabuchan/");
+        startActivity(intent);
+    }
+
     private void imageShare(Uri uri) {
         // 画像を共有する
         Intent intent = new Intent();
